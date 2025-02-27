@@ -1,4 +1,5 @@
 #include <iostream>
+//#include <utility>
 
 using namespace std;
 
@@ -16,6 +17,11 @@ int main()
     a = {6, 7};
     b = a;
     cout << b.first << " " << b.second << endl;
+
+    auto p_auto = pair<double, char>(3.14, 'P'); // можно создать пару и таким образом, с помощью присваивания переменной
+    cout << p_auto.first << " " << p_auto.second << endl;
+
+    cout << (p < a); // пары сравниваются лексикографически (сначала first, а затем second)
 
     return 0;
 }
