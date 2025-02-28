@@ -49,8 +49,13 @@ int main()
     cout << endl;
 
     vec_2.reserve(100); // выделяет память под 100 элементов
-    vec_1.shrink_to_fit(); // уменьшает размер вектора до фактического количества элементов (capacity до size)
+    cout << vec_2.size() << endl;    
 
+    vec_1.shrink_to_fit(); // уменьшает размер вектора до фактического количества элементов (capacity до size)
+    cout << vec_1.size() << endl;
+    
+    vec_2.resize(50);
+    cout << vec_2.size();
     
 
     return 0;
