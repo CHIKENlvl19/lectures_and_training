@@ -36,7 +36,14 @@ int main()
     for(auto n : map_1) cout << "[" << n .first << " " << n.second << "]" << endl;
     cout << endl;
 
-    map<string, int> map_2 = { {"banana", 10}, {"apple", 20}, {"penis", 30} };
+    map<int, string> map_2 = { {10, "banana"}, {20, "apple"}, {30, "penis"} };
+    for(auto n : map_2) cout << "[" << n .first << " " << n.second << "]" << endl;
+    cout << endl;
+
+    map_2.swap(map_1);
+    for(auto n : map_2) cout << "[" << n .first << " " << n.second << "]" << endl;
+    cout << endl;
+
 
     return 0;
 }
