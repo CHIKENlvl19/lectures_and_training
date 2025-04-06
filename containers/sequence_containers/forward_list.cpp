@@ -5,13 +5,13 @@ using namespace std;
 
 int main()
 {
-    forward_list<int> fwd_list1; // пустой
+    forward_list<int> fwd_list1; // РїСѓСЃС‚РѕР№
     forward_list<int> fwd_list2 = {1, 2, 3};
     for (int n : fwd_list2) cout << n << " ";
     cout << endl;
 
 
-    fwd_list2.push_front(0); // вставка в начало : 0 1 2 3
+    fwd_list2.push_front(0); // РІСЃС‚Р°РІРєР° РІ РЅР°С‡Р°Р»Рѕ : 0 1 2 3
     for (int n : fwd_list2) cout << n << " ";
     cout << endl;
 

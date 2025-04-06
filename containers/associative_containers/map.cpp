@@ -7,15 +7,15 @@ int main()
 {
     map<int, string> map_1 = { {1, "Stas"}, {2, "Petr"}, {3, "Sergey"} };
 
-    map_1.insert( make_pair(4, "Ivan") ); // вставка значения 
-    for(auto n : map_1) cout << "[" << n .first << " " << n.second << "]" << endl; // простой вывод map
+    map_1.insert( make_pair(4, "Ivan") ); // РІСЃС‚Р°РІРєР° Р·РЅР°С‡РµРЅРёСЏ 
+    for(auto n : map_1) cout << "[" << n .first << " " << n.second << "]" << endl; // РїСЂРѕСЃС‚РѕР№ РІС‹РІРѕРґ map
     cout << endl;
 
     map_1.insert( {5, "Zhopa"} );
     for(auto n : map_1) cout << "[" << n .first << " " << n.second << "]" << endl;
     cout << endl;
 
-    map_1[6] = "Kto-to"; // вставка значения через operator[]
+    map_1[6] = "Kto-to"; // РІСЃС‚Р°РІРєР° Р·РЅР°С‡РµРЅРёСЏ С‡РµСЂРµР· operator[]
     for(auto n : map_1) cout << "[" << n .first << " " << n.second << "]" << endl;
     cout << endl;
 
@@ -23,16 +23,16 @@ int main()
     for(auto n : map_1) cout << "[" << n .first << " " << n.second << "]" << endl;
     cout << endl;
 
-    cout << map_1[8] << endl; // создаст ключ 8 и присвоит значение " ", если элемента нет
-    cout << map_1.at(8) << endl; // выбросит исключение, если ключа нет
+    cout << map_1[8] << endl; // СЃРѕР·РґР°СЃС‚ РєР»СЋС‡ 8 Рё РїСЂРёСЃРІРѕРёС‚ Р·РЅР°С‡РµРЅРёРµ " ", РµСЃР»Рё СЌР»РµРјРµРЅС‚Р° РЅРµС‚
+    cout << map_1.at(8) << endl; // РІС‹Р±СЂРѕСЃРёС‚ РёСЃРєР»СЋС‡РµРЅРёРµ, РµСЃР»Рё РєР»СЋС‡Р° РЅРµС‚
     
-    cout << map_1.count(1) << endl; // проверка на присутствие ключа -> 1 или 0 соответственно
+    cout << map_1.count(1) << endl; // РїСЂРѕРІРµСЂРєР° РЅР° РїСЂРёСЃСѓС‚СЃС‚РІРёРµ РєР»СЋС‡Р° -> 1 РёР»Рё 0 СЃРѕРѕС‚РІРµС‚СЃС‚РІРµРЅРЅРѕ
 
-    map_1.erase(7); // удаление по ключу
+    map_1.erase(7); // СѓРґР°Р»РµРЅРёРµ РїРѕ РєР»СЋС‡Сѓ
     for(auto n : map_1) cout << "[" << n .first << " " << n.second << "]" << endl;
     cout << endl;
 
-    map_1.erase( map_1.begin(), map_1.find(4) ); // удаление диапазона от начала и до указанного ключа
+    map_1.erase( map_1.begin(), map_1.find(4) ); // СѓРґР°Р»РµРЅРёРµ РґРёР°РїР°Р·РѕРЅР° РѕС‚ РЅР°С‡Р°Р»Р° Рё РґРѕ СѓРєР°Р·Р°РЅРЅРѕРіРѕ РєР»СЋС‡Р°
     for(auto n : map_1) cout << "[" << n .first << " " << n.second << "]" << endl;
     cout << endl;
 

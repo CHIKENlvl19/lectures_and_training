@@ -1,0 +1,5 @@
+.vscode/settings.json
+base_of_cpp/output/cin_cout
+base_of_cpp/output/data_types
+containers/associative_containers/output/map
+containers/associative_containers/output/set
