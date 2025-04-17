@@ -27,14 +27,14 @@ void DisplayTuple(ostream& os, tuple<int, int, int> data) {
     os << setw(4) << get<2>(data);
 }
 
-void operator<< (ostream& os, tuple<int, int, int> data) {
+void operator << (ostream& os, tuple<int, int, int> data) {
     os << setfill('0');
     os << setw(2) << get<0>(data) << " ";
     os << setw(2) << get<1>(data) << " ";
     os << setw(4) << get<2>(data);
 }
 
-istream& operator>> (istream& is, tuple<int, int, int>& data) {
+istream& operator >> (istream& is, tuple<int, int, int>& data) {
     int day;
     int month;
     int year;
@@ -48,7 +48,7 @@ istream& operator>> (istream& is, tuple<int, int, int>& data) {
     return is;
 }
 
-ostream& operator<< (ostream& os, vector<int> v) {
+ostream& operator << (ostream& os, vector<int> v) {
     for (auto item : v){
         os << item << " ";
     }
